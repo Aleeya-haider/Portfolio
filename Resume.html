@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+
+  <title>
+    Portfolio Website
+  </title>
+</head>
+
+<body style = "background-color: rgb(37, 34, 34) ;">
+  <div class="container-fluid body_container">
+
+     
+    <!-- header -->
+    <header class = "head">
+            <!-- logo -->
+        
+            <div class=" col-lg-2 col-md-2 col-sm-2">
+            <img class = "logo" src="./logo-1.png" alt="logo">
+            </div>
+            <!-- navigation bar -->
+            <div class="col-lg-8 col-md-8 col-sm-8">
+            <nav class = "nav-bar">
+                <a  href ="#about" class = "links" >About</a> |
+                <a  href="#portfolio" class = "links">Portfolio</a> |
+                <a  href="#contact" class = "links">Contact</a> |
+            </nav> 
+            </div>
+    </header>
+
+
+  <!-- about section div -->
+  <div class="about-wrap d-flex container-fluid">
+
+      <div class="row">
+          <div class = "col-lg-4 col-md-4 col-sm-4">
+            <div>
+                <img class="img-fluid profile-picture" src ="./Picture.jpeg" alt="Profile Picture">
+            </div>
+       </div>
+            
+       <!-- Use aside here -->
+       <div class = "col-lg-8 col-md-8 col-sm-8">
+             <div id = "about" class="About-section container">
+                <div class = "overview">
+                    <h2 class = "introduction-heading"><b>COMPUTER ENGINEER</b></h2>
+                    <p class = "introduction-text">
+                    Final year Computer Engineering student currently seeking to learn engineering knowledge within the field of 
+                    Embedded Systems, IoT & Machine Learning. Looking forward to further develop the skill-set that supports full-time 
+                    employment.</p> 
+                    </div>
+        
+                <br>
+               
+                <div class = "skills">
+                    <h3 class = "skills-heading"> Skills</h3>
+                    <p> 
+                        <table class="skill-table">
+                          <tr>
+                            <th class = "table-heading" >Programming | </th>
+                            <th class = "table-heading" >Hardware Development |</th>
+                            <th class = "table-heading"  >Tools </th>
+                          </tr>
+                          <tr>
+                            <td class = "table-data"  >JAVA</td>
+                            <td class = "table-data">Arduino UNO</td>
+                            <td class = "table-data">Proteus</td>
+                          </tr>
+                          <tr>
+                            <td class = "table-data">React</td>
+                            <td class = "table-data" >Rspberry Pi 3b</td>
+                            <td class = "table-data">Keil uvision</td>
+                          </tr>
+                            <tr>
+                            <td class = "table-data">React Native</td>
+                            <td class = "table-data">STM micro-controller</td>
+                            <td class = "table-data">AutoCAD</td>
+                          </tr>
+                              <tr>
+                            <td class = "table-data">JavaScript</td>
+                            <td class = "table-data">Altera FPGA Board</td>
+                            <td class = "table-data">Quartus</td>
+                          </tr>
+                              <tr>
+                            <td class = "table-data">HTML</td>
+                            <td class = "table-data">Node Mcu</td>
+                            <td class = "table-data">Firebase</td>
+                          </tr>
+                              <tr>
+                            <td class = "table-data">CSS</td>
+                            <td class = "table-data">ESP 8266</td>
+                            <td class = "table-data">Azure Cloud Platform</td>
+                          </tr>   
+                        </table>    
+                    </p>
+                </div>
+            </div>
+        </div>
+       </div>
+  </div>
+
+ 
+  <br>
+  <hr class = "line"/>
+
+    <div id = "portfolio" class="Portfolio-wrap">
+      <div class = "portfolio">
+        <aside class= "aside1">
+        <h1 class = "Portfolio-heading"> <i>Portfolio</i></h1>
+        </aside>
+
+        <aside class = "aside2">
+        <p class = "Portfolio-text">
+            Currently, I am working on an IoT-based Active Plant wall for intelligent indoor Climate control. The System consists of a local unit 
+            comprising edge nodes with sensors and actuating units. Sensor nodes are deployed and collecting data real-time data to sent to the Fog node.
+            Fog node consists of the micro-processor Raspberry Pi 3. Micro-processor acts as a gateway between edge nodes and Cloud. Data filteration is
+            applied on fog node and further data packets are sent to Cloud. For Cloud unit we are utilising Azure Cloud Platform by MicroSoft. For Data Storage 
+            we have integrated <i>Azure Cosmos DB</i> with Raspberry Pi and for remote monitoring we have utilised <i>Azure IoT Central Application</i>. 
+        </p>
+      </aside>
+    </div>
+    </div>
+
+  <br>
+  <hr class = "line2"/>
+     <div id ="contact" class="contact-wrap">
+        <div class="Contact">
+        <h1 class = "contact-heading"> <b>For Contact </b></h1>
+        <form  id = "loginForm" class="contact-form">
+            <label class = "label" for="fname">First name*:</label><br>
+            <input class = "input" type="text" id="fname" name="fname" required><br><br>
+            <label class = "label" for="lname">Last name*:</label><br>
+            <input  class = "input" type="text" id="lname" name="lname"required><br><br>
+            <label class = "label" for="email">Email address*:</label><br>
+            <input  class = "input" type="email" id="email" name="email" placeholder = "example@gmail.com" required><br><br>
+            <label class = "label" for="phone">Phone number*:</label><br>
+            <input class = "input" type="tel" id="phone" name="phone" pattern= "\03\d{2}-\d{7}" required placeholder="+92-3xx-xxxxxxx"><br><br>  
+            <label class = "label" for="msg">Message:</label><br>
+            <textarea class = "msg" name="message" id = "msg" placeholder="Message..."></textarea><br><br>
+            <input class = "button" type="submit" value="Submit">
+
+          </form> 
+    </div> 
+  </div>  
+  <br>
+
+
+  <footer class = "footer">
+      <div class = "email">
+        Email me at: <a  class = "email" href = "mailto:"><i>aleeya_haider@hotmail.com</i></a>
+      </div>
+
+      <div class = "social-media">
+          <a href = "https://www.facebook.com/aleeya.bokhari.3"> <img class = "fb" src = "./fb3.png" alt = "facebook"></a>
+          <a href = "https://twitter.com/AliyaNaqvi12"><img class = "social-links" src = "./twitter.jpg" alt = "twitter"> </a>
+          <a href = "https://www.linkedin.com/in/aleeya-haider/"><img class = "social-links" src = "./linkedin2.png" alt = "linkedIn"></a>
+      </div>
+  </footer>
+
+</div>
+    
+
+  <script src = "index.js"> //including form JS
+
+  </script>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+
+    <!-- popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+    <!-- bootstrap.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

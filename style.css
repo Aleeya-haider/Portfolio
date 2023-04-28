@@ -1,0 +1,500 @@
+
+.body_container {
+    --bs-gutter-x: 0rem;
+}
+.head{
+    background-color: black; 
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.row {
+   width:100%;
+}
+.logo {
+    width:50px; 
+    height: 50px;
+    margin-left: 3%;
+}
+
+.nav-bar {
+    display: inline-flex; 
+    margin-top: 1%;
+    float: right;
+    margin-right: 2% ;
+}
+
+
+a:hover {
+    color:rgb(9, 74, 62);
+}
+.links {
+    padding: 4px; 
+    color: gray;
+    text-decoration: none;
+
+}
+
+.aside {
+    width: 120%;
+    padding-left: 15%;
+    display: inline-flex;
+}
+.profile-picture {
+    width: 50% ;
+    height: 30%;
+    margin-top: 9%;
+    margin-left: 32%;
+    opacity: 75%;
+    border-radius: 2%;
+}
+
+.Portfolio-text {
+    color: rgb(184, 182, 182);
+}
+
+.About-section {
+    position: relative;
+}
+.overview {
+    position: absolute;
+    top: 300%;
+    left: 22%;
+    width: 61%;
+}
+
+
+.introduction-heading {
+    color: rgb(19, 92, 79);
+    text-decoration: bold;
+
+}
+.introduction-text {
+    color: rgb(184, 182, 182);
+    font-size: small;
+    text-align: justify;
+
+}
+
+
+.line2 {
+    width: 100%;
+    color: whitesmoke;
+}
+
+.line {
+    width: 100%;
+    color: whitesmoke;
+}
+.skills {
+    position: absolute;
+    top: 800%;
+    left: 22%;
+}
+.skill-table {
+    width: 180%;
+    color: rgb(184, 182, 182);
+    font-size: smaller;
+}
+
+.table-rows {
+    margin-left: 3%;
+}
+.skills-heading {
+    color: rgb(19, 92, 79);
+}
+
+
+.Portfolio-wrap{
+    position: relative;
+    height: 391px;
+}
+
+.portfolio {
+    position: absolute;
+    left: 10%;
+    
+}
+
+.aside1{
+        width: 40%;
+        float: left; 
+        margin-top: 11%;      
+}
+.Portfolio-heading {
+   
+    color: rgb(9, 74, 62);
+    font-size: 80px;
+
+}
+
+.aside2{
+    width: 45%;
+    margin-left: 15px;
+    padding-left: 15px;
+    float: left; 
+    margin-top: 7%;     
+}
+.Portfolio-text {
+   
+    color: rgb(184, 182, 182);
+    text-decoration: bold;
+    text-align: justify;
+  
+}
+
+
+.Contact {
+    padding: 50px;
+}
+.contact-heading {
+   
+    color: rgb(184, 182, 182);
+    text-align: center;
+
+}
+
+.contact-form{
+    margin-left: 34%;
+}
+
+
+.input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 50%;
+    background-color: rgb(237, 223, 223);
+    color:black;
+}
+
+.msg{
+ 
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(237, 223, 223);
+    color:black;
+    padding: 5px;
+
+}
+
+textarea {
+    height: 200px;
+    width: 50%;
+
+}
+.label{
+    color: rgb(184, 182, 182);
+}
+
+
+.button {
+    background-color: rgb(9, 74, 62);
+    color: white;
+    border-radius: 3%;
+    border: none;
+    width: 100px;
+    padding: 5px;
+    margin-left: 19%;
+}
+
+.footer {
+    position: sticky;
+    background-color: black; 
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.email {
+    color:rgb(152, 147, 147);
+}
+
+.social-links{
+    width: 20px;
+    height: 20px;
+}
+.fb {
+    width: 25px;
+    height: 25px;
+}
+
+input:required:invalid,
+input:focus:invalid {
+  background-image: url('./exclamation.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+input:required:valid {
+  background-image: url('./tick.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+/* media queries */
+@media (max-width: 576px) {
+
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin-left: 3%;
+    }
+
+    .links {
+        padding: 4px;
+        color: gray;
+        text-decoration: none;
+        font-size: smaller;
+        margin-top: 2%;
+    }
+
+    .profile-picture {
+        width: 35%;
+        height: 50%;
+        margin-top: 9%;
+        margin-left: 3%;
+        opacity: 75%;
+        border-radius: 2%;
+    }
+
+    .overview {
+        position: absolute;
+        top: -602%;
+        left: 51%;
+        width: 49%;
+    }
+
+    .introduction-heading{
+        font-size: 15px;
+    }
+
+
+    .introduction-text {
+        color: rgb(184, 182, 182);
+        font-size: 10px;
+        text-align: justify;
+    }
+
+
+    .skill-table {
+        width: 104%;
+        color: rgb(184, 182, 182);
+        font-size: smaller;
+    }
+
+    .skills {
+        position: absolute;
+        top: 180%;
+        left: 15%;
+    }
+
+    .skills-heading {
+        color: rgb(19, 92, 79);
+        font-size: smaller;
+        margin-left: 36%;
+    }
+
+
+    .table-heading{
+        font-size:x-small;
+    }
+    
+
+    .table-data{
+        font-size:xx-small;
+    }
+
+
+    .line {
+        width: 100%;
+        color: whitesmoke;
+        margin-top: 40%;
+        }
+    
+    .Portfolio-wrap {
+        position: relative;
+        height: 250px;
+    }
+
+    .Portfolio-heading {
+        color: rgb(9, 74, 62);
+        font-size: 30px;
+        margin-top: 80%;
+    }
+
+    .aside1 {
+        width: 12%;
+        float: left;
+        margin-top: 0%;
+    }
+
+    .aside2 {
+        width: 93%;
+        margin-left: 0px;
+        padding-left: 0px; 
+        margin-top: 0%;
+
+    }
+
+    .Portfolio-text {
+        color: rgb(184, 182, 182);
+        text-decoration: bold;
+        text-align: justify;
+        font-size: x-small;
+    }
+
+    
+    .line2 {
+        width: 100%;
+        color: whitesmoke;
+    }
+
+    .contact-heading {
+        color: rgb(184, 182, 182);
+        text-align: center;
+        font-size: medium;
+    }
+
+    .contact-form {
+        margin-left: 22%;
+    }
+
+    .label {
+        color: rgb(184, 182, 182);
+        font-size: small;
+    }
+
+    
+    .input {
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 75%;
+        background-color: rgb(237, 223, 223);
+        color: black;
+    }
+
+    .msg {
+        border-radius: 5px;
+        border: 1px solid gray;
+        width: 75%;
+        height: 50%;
+        background-color: rgb(237, 223, 223);
+        color: black;
+    }
+
+    .email {
+        color: rgb(152, 147, 147);
+        font-size: x-small;
+    }
+
+    .button {
+        background-color: rgb(9, 74, 62);
+        color: white;
+        border-radius: 3%;
+        border: none;
+        width: 100px;
+        padding: 5px;
+        margin-left: 14%;
+    }
+
+}
+
+@media (min-width:577px) and (max-width: 768px) {
+   
+    
+
+}
+
+@media (min-width:769px) and (max-width: 992px) {
+
+    .profile-picture {
+        width: 95%;
+        height: 50%;
+        margin-top: 9%;
+        margin-left: 25%;
+        opacity: 75%;
+        border-radius: 2%;
+    }
+
+
+
+
+}
+
+
+@media (min-width:993px) and (max-width: 1200px) {
+
+
+    .overview {
+        position: absolute;
+        top: 300%;
+        left: 11%;
+        width: 61%;
+    }
+    .skills {
+        position: absolute;
+        top: 800%;
+        left: 11%;
+    }
+
+    .skill-table {
+        width: 119%;
+        color: rgb(184, 182, 182);
+        font-size: smaller;
+    }
+
+    .skills {
+        position: absolute;
+        top: 855%;
+        left: 11%;
+    }
+    .line {
+        width: 100%;
+        color: whitesmoke;
+    }
+
+    .profile-picture {
+        width: 70%;
+        height: 30%;
+        margin-top: 29%;
+        margin-left: 32%;
+        opacity: 75%;
+        border-radius: 2%;
+    }
+
+    .aside1 {
+        width: 31%;
+        float: left;
+        margin-top: 11%;
+    }
+
+    .aside2 {
+        width: 50%;
+        margin-left: 15px;
+        padding-left: 15px;
+        float: left;
+        margin-top: 7%;
+    }
+
+    .Portfolio-heading {
+        color: rgb(9, 74, 62);
+        font-size: 50px;
+    }
+
+    .Portfolio-text {
+        color: rgb(184, 182, 182);
+        text-decoration: bold;
+        text-align: justify;
+        font-size: smaller;
+    }
+
+    .Portfolio-wrap {
+        position: relative;
+        height: 268px;
+    }
+    
+
+
+}
